@@ -5,12 +5,12 @@ https://reqres.in/
 ## Содержание:
 
 * <a>Технологии и инструменты</a>
-* <a href="#link-реализованные-проверки">Реализованные проверки</a>
-* <a href="#link-сборка-в-jenkins">Сборка в Jenkins</a>
-* <a href="#link-запуск-из-инструменты-командной-строки">Запуск из командной строки</a>
-* <a href="#link-allure-отчет">Allure отчет</a>
-* <a href="#link-интеграция с Allure Test Ops">Интеграция с Allure Test Ops</a>
-* <a href="#link-отчет-в-telegram">Отчет в Telegram</a>
+* <a>Реализованные проверки</a>
+* <a>Сборка в Jenkins</a>
+* <a>Запуск из командной строки</a>
+* <a>Allure отчет</a>
+* <a>Интеграция с Allure Test Ops</a>
+* <a>Отчет в Telegram</a>
 
 
 
