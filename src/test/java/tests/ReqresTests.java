@@ -2,12 +2,14 @@ package tests;
 
 import models.BodyData;
 import models.UserData;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.is;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static specs.Specs.*;
+
 
 public class ReqresTests {
     @Test
