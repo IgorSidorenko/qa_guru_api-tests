@@ -1,81 +1,38 @@
 plugins {
-    id 'java-library'
-    id 'io.qameta.allure' version '2.9.6'
+    id 'java'
+    id "io.qameta.allure" version "2.9.6"
     id "io.freefair.lombok" version "6.0.0-m2"
-}
-
-repositories {
-    mavenCentral()
 }
 
 group 'org.example'
 version '1.0'
 
-
-compileTestJava {
-    options.encoding = "UTF-8"
+repositories {
+    mavenCentral()
 }
 
-def selenideVersion = "6.4.0",
-    junitVersion = "5.8.1",
-    assertjVersion = "3.19.0",
-    ownerVersion = "1.0.12",
-    slf4jVersion = "1.7.36",
-    allureVersion = "2.17.3",
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+def junitVersion = "5.8.2",
+    slf4jVersion = '1.7.36',
     restAssuredVersion = "5.1.0",
-    jacksonVersion = "2.11.2"
-allure {
-    report {
-        version.set(allureVersion)
-    }
-    adapter {
-        aspectjWeaver.set(true)
-        frameworks {
-            junit5 {
-                adapterVersion.set(allureVersion)
-            }
-        }
-    }
-}
+    jacksonVersion = "2.11.2",
+    lombokVersion = "1.18.10",
+    ownerVersion = "1.0.12"
+
 dependencies {
     testImplementation(
-            "com.codeborne:selenide:$selenideVersion",
             "org.junit.jupiter:junit-jupiter:$junitVersion",
-            "org.slf4j:slf4j-api:$slf4jVersion",
-            "org.assertj:assertj-core:$assertjVersion",
-            "org.aeonbits.owner:owner:$ownerVersion",
-            'io.qameta.allure:allure-selenide:2.17.3',
-            "com.fasterxml.jackson.core:jackson-databind:$jacksonVersion",
-            "io.qameta.allure:allure-selenide:$allureVersion",
+            "org.slf4j:slf4j-simple:$slf4jVersion",
             "io.rest-assured:rest-assured:$restAssuredVersion",
-            "io.qameta.allure:allure-rest-assured:$allureVersion",
-    )
-    testRuntimeOnly(
-            "org.junit.jupiter:junit-jupiter-engine:$junitVersion",
-            "org.slf4j:slf4j-simple:$slf4jVersion"
+            "com.fasterxml.jackson.core:jackson-databind:$jacksonVersion",
+            "org.projectlombok:lombok:$lombokVersion",
+            "org.aeonbits.owner:owner:$ownerVersion",
+
     )
 }
 
-allure {
-    report {
-        version.set("2.17.3") //версия Allure Report (https://github.com/allure-framework/allure2)
-    }
-    adapter {
-        aspectjWeaver.set(true) // обработка аннотации @Step
-        frameworks {
-            junit5 {
-                adapterVersion.set("2.17.3") //версия Allure JUnit5 (https://github.com/allure-framework/allure-java)
-            }
-        }
-    }
-    test {
-        useJUnitPlatform()
-        systemProperties(System.getProperties())
-        testLogging {
-            lifecycle {
-                events "started", "skipped", "failed", "standard_error", "standard_out"
-                exceptionFormat "short"
-            }
-        }
-    }
+test {
+    useJUnitPlatform()
 }
