@@ -3,7 +3,6 @@ package tests;
 import io.qameta.allure.AllureId;
 import models.BodyData;
 import models.UserData;
-import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static io.restassured.RestAssured.given;
