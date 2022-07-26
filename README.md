@@ -2,19 +2,33 @@
 https://reqres.in/
 -----
 
-### Технологии используемые в проекте
-![Intelij_IDEA](images/icons/Intelij_IDEA.png)![Java](images/icons/Java.png)![Selenide](images/logo/Selenide.png)![Selenoid](images/logo/Selenoid.png)![Gradle](images/logo/Gradle.png)![JUnit5](images/logo/JUnit5.png)![Allure Report](images/logo/Allure_Report.png)![AllureTestOps](images/logo/AllureTestOps.png)![Jenkins](images/logo/Jenkins.png)![Telegram](images/logo/Telegram.png)
-![Rest Assured](images/icons/rest-assured.png)![Lombok](images/icons/lombok.png)
-* [Java](https://www.oracle.com/java/) - для написания тестов
-* [Gradle](https://gradle.org) - для сборки проекта
-* [JUnit 5](https://junit.org/junit5/) - для запуска тестов
-* [Selenide](https://selenide.org) - для тестирования UI
-* [Rest-Assured](https://rest-assured.io) - для тестирования API
-* [Jenkins](https://www.jenkins.io/) - для обеспечения процесса непрерывной интеграции
-* [Selenoid](https://aerokube.com/selenoid/) - для запуска UI тестов в [Docker containers](https://www.docker.com/resources/what-container)
-* [Allure TestOps](https://docs.qameta.io/allure-testops/) и [Allure Report](http://allure.qatools.ru) - для управления тестами, анализа их прохождения и оформления отчетности
-* [Telegram Bot](https://core.telegram.org/bots) - для оповещения о прохождении тестов
----
+## Содержание:
+
+* <a href="#link-технологии-и-инструменты">Технологии и инструменты</a>
+* <a href="#link-реализованные-проверки">Реализованные проверки</a>
+* <a href="#link-сборка-в-jenkins">Сборка в Jenkins</a>
+* <a href="#link-запуск-из-инструменты-командной-строки">Запуск из командной строки</a>
+* <a href="#link-allure-отчет">Allure отчет</a>
+* <a href="#link-интеграция с Allure Test Ops">Интеграция с Allure Test Ops</a>
+* <a href="#link-отчет-в-telegram">Отчет в Telegram</a>
+
+
+
+## Технологии и инструменты
+В проекте используются:
+
+<p align="center">
+<img width="6%" src="images/logo/Java.svg">
+<img width="6%" src="images/logo/Intelij_IDEA.svg">
+<img width="6%" src="images/logo/Gradle.svg">
+<img width="6%" src="images/logo/JUnit5.svg">
+<img width="6%" src="images/logo/Jenkins.svg">
+<img width="6%" src="images/logo/Selenide.svg">
+<img width="6%" src="images/logo/Selenoid.svg">
+<img width="6%" src="images/logo/GitHub.svg">
+<img width="6%" src="images/logo/Allure_Report.svg">
+<img width="6%" src="images/logo/Telegram.svg">
+</p>
 
 #### Список проверок, реализованных в автотестах
 - [x] Вызов пользователя
@@ -27,37 +41,25 @@ https://reqres.in/
 - [x] Проверка email в списке пользователей (Groovy)
 
 
-## <img width="4%" title="Jenkins" src="images/icons/Jenkins.png"> Запуск тестов в [Jenkins](https://jenkins.autotests.cloud/job/011_tmolonushenko_reqresin/)
+## Сборка в Jenkins
+Для удалённого запуска можно настроить запуск в Jenkins. Пример прогона:
 
----
-![Jenkins](images/Allure_Report_reqresin1.png)
+<img src="images/screenshots/jenkins_report.png">
 
+## Allure отчет
+Результат прогона тестов можно посмотреть в отчёте. Информация в тесте представлена в виде шагов с действиями.
 
-## <img width="4%" title="Allure Report" src="images/icons/AllureTestOps.png"> Отчет о результатах тестирования в [Allure Report](https://jenkins.autotests.cloud/job/011_tmolonushenko_sotoFoto/allure/)
+<img src="images/screenshots/test_example.png">
 
-----
+## Интеграция с Allure TestOps
+<img src="images/screenshots/testops_example.png">
 
-![Allure Report](images/sborka.png)
-### Список тестов c описанием тестов
-![Allure Report](images/Allure_Report3.png)
+<img src="images/screenshots/testops_example2.png">
 
-### Графики
-![Allure Report](images/Allure_Report4.png)
+## Отчет в Telegram
+Результат прохождения тестов отправляется в Telegram с помощью бота. Пример сообщения с отчётом:
 
+<p align="center">
+<img src="images/screenshots/telegram2.png">
+</p>
 
-### <img width="4%" title="Allure Report" src="images/logo/AllureTestOps.png"> Проект интегрирован с Allure TestOps
-
----
-
-## Тест-кейсы с историей запусков
-![Allure TestOps](images/spisokTest.png)
-
-## Дашборд
-![Allure TestOps](images/allure.png)
-
----
-## <img width="4%" title="Allure Report" src="images/icons/Telegram.png"> Уведомление в Telegram
-![Telegram Bot](images/screenshots/telegram2.png)
-
-
----
