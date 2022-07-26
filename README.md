@@ -3,7 +3,7 @@ https://reqres.in/
 -----
 
 ### Технологии используемые в проекте
-![Intelij_IDEA](images/icons/Intelij_IDEA.png)![Java](images/icons/Java.png)![Selenide](images/icons/Selenide.png)![Selenoid](images/icons/Selenoid.png)![Gradle](images/icons/Gradle.png)![JUnit5](images/icons/JUnit5.png)![Allure Report](images/icons/Allure_Report.png)![AllureTestOps](images/icons/AllureTestOps.png)![Jenkins](images/icons/Jenkins.png)![Telegram](images/icons/Telegram.png)
+![Intelij_IDEA](images/icons/Intelij_IDEA.png)![Java](images/icons/Java.png)![Selenide](images/logo/Selenide.png)![Selenoid](images/logo/Selenoid.png)![Gradle](images/logo/Gradle.png)![JUnit5](images/logo/JUnit5.png)![Allure Report](images/logo/Allure_Report.png)![AllureTestOps](images/logo/AllureTestOps.png)![Jenkins](images/logo/Jenkins.png)![Telegram](images/logo/Telegram.png)
 ![Rest Assured](images/icons/rest-assured.png)![Lombok](images/icons/lombok.png)
 * [Java](https://www.oracle.com/java/) - для написания тестов
 * [Gradle](https://gradle.org) - для сборки проекта
@@ -45,7 +45,7 @@ https://reqres.in/
 ![Allure Report](images/Allure_Report4.png)
 
 
-### <img width="4%" title="Allure Report" src="images/icons/AllureTestOps.png"> Проект интегрирован с Allure TestOps
+### <img width="4%" title="Allure Report" src="images/logo/AllureTestOps.png"> Проект интегрирован с Allure TestOps
 
 ---
 
@@ -57,7 +57,7 @@ https://reqres.in/
 
 ---
 ## <img width="4%" title="Allure Report" src="images/icons/Telegram.png"> Уведомление в Telegram
-![Telegram Bot](images/telegram2.png)
+![Telegram Bot](images/screenshots/telegram2.png)
 
 
 ---
