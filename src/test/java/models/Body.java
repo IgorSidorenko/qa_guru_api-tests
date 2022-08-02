@@ -9,6 +9,7 @@ import lombok.Data;
 public class Body {
     private Integer page;
     private String email;
+    private String job;
     @JsonProperty("per_page")
     private Integer perPage;
     private Integer total;

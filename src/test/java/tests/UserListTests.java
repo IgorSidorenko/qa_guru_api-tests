@@ -6,7 +6,7 @@ import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.hasItem;
 import static specs.Specs.request;
 
-public class UserList {
+public class UserListTests {
     @Test
     public void testListUser() {
         given()

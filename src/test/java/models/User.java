@@ -14,4 +14,6 @@ public class User {
     @JsonProperty("last_name")
     private String lastName;
     private String avatar;
+    private String job;
+    private String name;
 }

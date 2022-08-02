@@ -29,7 +29,6 @@ dependencies {
             "com.fasterxml.jackson.core:jackson-databind:$jacksonVersion",
             "org.projectlombok:lombok:$lombokVersion",
             "org.aeonbits.owner:owner:$ownerVersion",
-
     )
 }
 
